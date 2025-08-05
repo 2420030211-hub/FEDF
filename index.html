@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #ffe4b5, #ffcc99);
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 450px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            margin-top: 40px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            width: auto;
+            margin-right: 6px;
+        }
+        .btn {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        input[type="submit"], input[type="reset"] {
+            width: 120px;
+            border: none;
+            padding: 10px;
+            background-color: #ff9966;
+            color: white;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: #e68a5c;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Registration Form</h2>
+
+        <label>Full Name:</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Password:</label>
+        <input type="password" placeholder="Enter your password">
+
+        <label>Confirm Password:</label>
+        <input type="password" placeholder="Re-enter your password">
+
+        <label>Email:</label>
+        <input type="email" placeholder="Enter your email">
+
+        <label>Date of Birth:</label>
+        <input type="date">
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <br><br>
+
+        <label>Courses:</label><br>
+        <input type="checkbox"> FEDF
+        <input type="checkbox"> OOP
+        <input type="checkbox"> OS
+        <input type="checkbox"> AIML
+        <br><br>
+
+        <label>Choose a Sport:</label>
+        <select>
+            <option selected disabled>Select</option>
+            <option>Table Tennis</option>
+            <option>Throw Ball</option>
+            <option>Cricket</option>
+            <option>Football</option>
+        </select>
+
+        <label>Skill Rating:</label>
+        <input type="range" min="0" max="5" value="0">
+
+        <div class="btn">
+            <input type="submit" value="Register">
+            <input type="reset" value="Cancel">
+        </div>
+    </div>
+
+</body>
+</html>
